@@ -1,0 +1,33 @@
+@import "resert.scss";
+
+.top_contact_us {
+    display: flex;
+    justify-content: space-between;
+    background-color: #3f3f3f;
+    width: 100%;
+    padding: 20px 0 20px 0;
+
+    .top_contact_left {
+        ul {
+            display: flex;
+
+            li {
+                display: flex;
+                color: #d5d5d5;
+                p {
+                    font-size: 10pt;
+                }
+            }
+        }
+    }
+
+    .top_contact_social {
+        ul {
+            display: flex;
+            a {
+                color: #d5d5d5;
+                font-size: 16px;
+            }
+        }
+    }
+}
