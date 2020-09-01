@@ -212,6 +212,21 @@ table {
   padding-right: 20px;
 }
 
+@media only screen and (max-width: 1200px) {
+  .top_head_content .navigation .navigation_menyu {
+    display: none;
+  }
+  .top_head_content .navigation .search_basket {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .top_head_content .navigation #hamburger_menu {
+    display: block;
+    padding-left: 20px;
+  }
+}
+
 a,
 a:link,
 a:visited,
@@ -219,5 +234,9 @@ a:hover,
 a:active {
   text-decoration: none;
   color: black;
+}
+
+#hamburger_menu {
+  display: none;
 }
 /*# sourceMappingURL=style.css.map */
