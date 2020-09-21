@@ -85,7 +85,6 @@
         @include Display;
 
         .navigation_menyu {
-            overflow: hidden;
             display: flex;
             align-items: center;
             cursor: pointer;
@@ -93,7 +92,7 @@
 
         .navigation_menyu span {
             float: left;
-            font-size: 16px;
+            font-size: 18px;
             color: black;
             text-align: center;
             padding-right: 20px;
@@ -102,8 +101,8 @@
         .navigation_menyu_childeren {
             display: none;
             position: absolute;
+            font-size: 16px;
             background-color: #f9f9f9;
-            // min-width: 160px;
             box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
             z-index: 1;
             border-bottom: solid 4px rgba(0, 125, 242, 1);
@@ -157,6 +156,8 @@
 
 
 
+
+
 a,
 a:link,
 a:visited,
@@ -168,4 +169,49 @@ a:active {
 
 #hamburger_menu {
     display: none;
+    cursor: pointer;
+}
+
+.navigation_responsive_menyu {
+    width: 100%;
+    background-color: white;
+    padding: 20px 0;
+    display: none;
+
+    .click_show_hide {
+        display: flex;
+        justify-content: space-between;
+        padding: 15px 0;
+
+        a {
+            font-size: 16px;
+            font-family: Poppins;
+        }
+
+        :hover {
+            color: rgba(0, 125, 242, 1);
+            transition: all 0.5s;
+        }
+    }
+
+    .navigation_res_menyu_childeren {
+        display: none;
+    }
+
+    #menyu_hide {
+        display: none;
+    }
+
+    @media only screen and (max-width:1201px) {
+        .navigation_responsive_menyu {
+            display: none;
+        }
+
+    }
+
+}
+
+.active {
+    display: block;
+    transition: width 10s height 10s;
 }
